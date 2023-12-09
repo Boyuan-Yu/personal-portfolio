@@ -137,13 +137,13 @@ span.navbar-text {
     background-color: #ffffff;
     border-radius: 50%;
     transform: scale(0);
-	transition: 0.3s ease-in-out;
+	  transition: 0.3s ease-in-out;
 }
 .social-icon a:hover::before {
     transform: scale(1);
 }
 .social-icon a img {
-	width: 40%;
+	width: 100%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
@@ -234,7 +234,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  /* background-image: url('./assets/img/banner-bg.png'); */
+  background-color: #000;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -264,7 +265,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   width: 96%;
 }
-.banner button {
+.banner a {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
@@ -272,15 +273,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
+  transition: 0.3s ease-in-out;
 }
-.banner button svg {
+.banner a svg {
   font-size: 25px;
   margin-left: 10px;
-  transition: 0.3s ease-in-out;
   line-height: 1;
-}
-.banner button:hover svg {
-  margin-left: 25px;
 }
 .banner img {
   animation: updown 3s linear infinite;
