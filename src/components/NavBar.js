@@ -51,8 +51,8 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={githubIcon} alt="" /></a>
-                <a href="#"><img src={linkedInIcon} alt="" /></a>
+                <a href="https://github.com/Boyuan-Yu"><img src={githubIcon} alt="" /></a>
+                <a href="https://www.linkedin.com/in/boyuan-yu/"><img src={linkedInIcon} alt="" /></a>
               </div>
               <button className="vvd"><span>Let’s Connect</span></button>
             </span>
