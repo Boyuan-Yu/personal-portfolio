@@ -7,16 +7,21 @@ import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { Framer } from "./components/Framer";
+import { About } from './components/About';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
+      <Framer />
       <Banner />
-      <Skills />
+      <About />
+      {/* <Skills /> */}
       <Projects />
       <Contact />
       <Footer />
+
     </div>
   );
 }
