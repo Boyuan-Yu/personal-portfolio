@@ -14,11 +14,11 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Framer />
       <Banner />
       <About />
       {/* <Skills /> */}
       <Projects />
+      <Framer />
       <Contact />
       <Footer />
 

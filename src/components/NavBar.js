@@ -37,24 +37,25 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" />
-          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
+
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
+            <Nav>
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
             </Nav>
-            <span className="navbar-text">
+            <Navbar.Brand href="/" className="mx-auto">
+            <img src={logo} alt="Logo" />
+          </Navbar.Brand>
+            <span className="navbar-text ms-auto">
               <div className="social-icon">
                 <a href="https://github.com/Boyuan-Yu"><img src={githubIcon} alt="" /></a>
                 <a href="https://www.linkedin.com/in/boyuan-yu/"><img src={linkedInIcon} alt="" /></a>
               </div>
-              <button className="vvd"><span>Let’s Connect</span></button>
+              <button className="vvd"><span>Let's Connect</span></button>
             </span>
           </Navbar.Collapse>
         </Container>
