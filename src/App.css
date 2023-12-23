@@ -283,6 +283,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
 
+.vvd a {
+  color: #fff;
+}
+
+.white-text {
+  color: #fff
+}
+
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
@@ -337,6 +345,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 25px;
   margin-left: 10px;
   line-height: 1;
+}
+
+.circle {
+  background-color: #2b2828;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fixed-height {
@@ -719,4 +735,87 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-image: repeating-radial-gradient(rgba(0, 0, 0, 0.4) 2px,
       #f5f5f5 5px,
       #f5f5f5 100px);
+}
+
+.bg-circularDark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  background-image: repeating-radial-gradient(#432a50 2px,
+      #121212 5px,
+      #121212 100px);
+}
+
+.bg-circularDark::before,
+.bg-circularDark::after {
+  content: "";
+  position: absolute;
+  background-color: #432a50;
+  /* Adjust as needed */
+}
+
+.bg-circularDark::before {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  /* Adjust as needed */
+}
+
+.bg-circularDark::after {
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 3px;
+  z-index: 1;
+  /* Adjust as needed */
+}
+
+.skill-name {
+  font-size: 12px;
+}
+
+.framer img {
+  width: 5vh;
+  height: auto;
+}
+
+.skill-icon {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 8px;
+  z-index: 10;
+}
+
+.corner-text {
+  position: absolute;
+  font-size: 20px;
+}
+
+.top-left {
+  top: 0;
+  left: 10%;
+}
+
+.top-right {
+  top: 0;
+  right: 10%;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 10%;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 10%;
 }

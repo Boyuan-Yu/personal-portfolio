@@ -44,18 +44,18 @@ export const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
+              <Nav.Link href="#framer" className={activeLink === 'framer' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('framer')}>Skills</Nav.Link>
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
             </Nav>
             <Navbar.Brand href="/" className="mx-auto">
-            <img src={logo} alt="Logo" />
-          </Navbar.Brand>
+              <img src={logo} alt="Logo" />
+            </Navbar.Brand>
             <span className="navbar-text ms-auto">
               <div className="social-icon">
                 <a href="https://github.com/Boyuan-Yu"><img src={githubIcon} alt="" /></a>
                 <a href="https://www.linkedin.com/in/boyuan-yu/"><img src={linkedInIcon} alt="" /></a>
               </div>
-              <button className="vvd"><span>Let's Connect</span></button>
+              <button className="vvd"><a href="#connect" onClick={() => onUpdateActiveLink('connect')}>Let's Connect</a></button>
             </span>
           </Navbar.Collapse>
         </Container>
