@@ -118,7 +118,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
-  padding: 0 25px;
+  padding: 0 20px;
   font-size: 18px;
   opacity: 0.65;
   position: relative;
@@ -202,6 +202,7 @@ span.navbar-text {
   background-color: transparent;
   transition: 0.3s ease-in-out;
 }
+
 
 .navbar-text button span {
   z-index: 1;
@@ -339,6 +340,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
   transition: 0.3s ease-in-out;
+}
+
+.banner a:hover {
+  color: #432a50;
 }
 
 .banner a svg {
@@ -730,6 +735,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Framer Css ************/
+.framer {
+  padding: 0;
+
+}
+
+.framer h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .bg-circularLight {
   height: 100vh;
   background-image: repeating-radial-gradient(rgba(0, 0, 0, 0.4) 2px,

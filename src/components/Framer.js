@@ -55,7 +55,7 @@ export const Framer = () => {
     <section className="framer" id="framer">
       <Container>
 
-        <h2>My Skills</h2>
+        <h2>Skills</h2>
         <div className="bg-circularDark">
           <div className="corner-text top-left">MACHINE LEARNING</div>
           <div className="corner-text top-right">PROGRAMMING LANGUAGES</div>

@@ -57,23 +57,21 @@ export const Banner = () => {
           <Col xs={12} md={7} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                <div>
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1 className="fixed-height">{`Hi! I'm Brian, `} <br /><span className="txt-rotate" ><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}
-                  <a href="/Brian_Yu_Resume.pdf" download>Download Resume <ArrowDownCircle size={25} /> </a>
+                  <p>As a quick learner and a real problem solver, I've refined my skills in various programming languages, frameworks, and tools. Count on me to thrive in any technical environment! </p>
+                  <a href="/Brian_Yu_Resume.pdf" download>Download My Resume <ArrowDownCircle size={25} /> </a>
                 </div>}
             </TrackVisibility>
           </Col>
           <Col xs={6} md={4} xl={3}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                <div>
                   <div className="circle">
                     <img src={headerImg} alt="Header Img" />
                   </div>
-
                 </div>}
             </TrackVisibility>
           </Col>

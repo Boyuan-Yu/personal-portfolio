@@ -44,6 +44,7 @@ export const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+              <Nav.Link href="#about" className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('about')}>About</Nav.Link>
               <Nav.Link href="#framer" className={activeLink === 'framer' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('framer')}>Skills</Nav.Link>
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
             </Nav>
@@ -55,7 +56,11 @@ export const NavBar = () => {
                 <a href="https://github.com/Boyuan-Yu"><img src={githubIcon} alt="" /></a>
                 <a href="https://www.linkedin.com/in/boyuan-yu/"><img src={linkedInIcon} alt="" /></a>
               </div>
-              <button className="vvd"><a href="#connect" onClick={() => onUpdateActiveLink('connect')}>Let's Connect</a></button>
+              <a href="#connect" onClick={() => onUpdateActiveLink('framer')}>
+                <button className="vvd">
+                  <span>let's connect</span>
+                </button>
+              </a>
             </span>
           </Navbar.Collapse>
         </Container>

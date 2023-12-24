@@ -16,9 +16,10 @@ function App() {
       <NavBar />
       <Banner />
       <About />
+      <Framer />
       {/* <Skills /> */}
       <Projects />
-      <Framer />
+
       <Contact />
       <Footer />
 
