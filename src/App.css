@@ -835,3 +835,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   right: 10%;
 }
+
+/************ About ************/
+
+.about .number {
+  font-size: 50px;
+  text-align: right;
+  padding-right: 10%;
+}
+
+.about .name {
+  font-size: 20px;
+  text-align: right;
+  padding-right: 10%;
+}
