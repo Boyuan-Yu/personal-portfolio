@@ -737,7 +737,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Framer Css ************/
 .framer {
   padding: 0;
-
+  min-height: 100vh;
 }
 
 .framer h2 {
@@ -838,6 +838,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ About ************/
 
+.about {
+  min-height: 100vh;
+}
+
 .about .number {
   font-size: 50px;
   text-align: right;
@@ -845,7 +849,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .about .name {
-  font-size: 20px;
+  font-size: 18px;
   text-align: right;
   padding-right: 10%;
+  margin-bottom: 10%;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.about img {
+  margin-bottom: 5%;
 }

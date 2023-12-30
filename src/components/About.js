@@ -34,17 +34,19 @@ const AnimatedNumbers = ({ number }) => {
 
 
 export const About = () => {
-  const [key, setKey] = useState('education');
+  const [key, setKey] = useState('Experience');
 
   return (
     <section className="about" id="about">
       <Container>
         <Row>
-          <Col >
+          <h2>About Me</h2>
+        </Row>
+        <Row>
+          <Col xs={12} md={5} xl={4}>
             <img src={computerImg} alt="Computer Img" />
           </Col>
-          <Col >
-            <h2>About Me</h2>
+          <Col xs={7} md={4} xl={5} >
             <p>I am a Full Stack Developer with a passion for learning and building new things. I have experience working with a variety of technologies and languages including Python, JavaScript, React, Node, Express, MongoDB, and more. I am currently working as a Software Engineer</p>
             <p>When I'm not coding, I enjoy playing guitar, reading, and playing video games.</p>
             <Tabs
@@ -65,11 +67,9 @@ export const About = () => {
                 <p><strong>{'\u2022'} University of California, San Diego</strong><br />
                   Bachelor of Science in Computer Science <em>2016 - 2019</em></p>
               </Tab>
-
             </Tabs>
           </Col>
-
-          <Col>
+          <Col xs={5} md={3} xl={3}>
             <Row>
               <span className="number">
                 <AnimatedNumbers number={6} />+
@@ -80,13 +80,13 @@ export const About = () => {
               <span className="number">
                 <AnimatedNumbers number={30} />+
               </span>
-              <span className="name">Projects Compeled</span>
+              <span className="name">Projects completed</span>
             </Row>
             <Row>
               <span className="number">
-                <AnimatedNumbers number={6} />+
+                &infin;
               </span>
-              <span className="name">Years of experience</span>
+              <span className="name">Passion & Energy</span>
             </Row>
 
           </Col>
