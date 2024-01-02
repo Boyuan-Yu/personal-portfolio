@@ -741,9 +741,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .framer h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3%;
 }
 
 .bg-circularLight {
@@ -840,6 +841,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .about {
   min-height: 100vh;
+  padding: 40px 0;
 }
 
 .about .number {
@@ -856,10 +858,60 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .about h2 {
+  font-size: 45px;
+  font-weight: 700;
   text-align: center;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
 
 .about img {
   margin-bottom: 5%;
 }
+
+
+.myclass ul>li>a {
+  color: white;
+  background-color: red;
+}
+
+.about .nav.nav-pills {
+  margin: 0 auto;
+  background-color: rgb(255 255 255 / 10%);
+  overflow: hidden;
+
+}
+
+.about .nav.nav-pills .nav-item {
+  width: 50%;
+}
+
+.about .nav.nav-pills .nav-link {
+  background-color: transparent;
+  padding: 14px 0;
+  color: #fff;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.about .nav.nav-pills .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  border-bottom: #4A2FBD 2px solid;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.about .nav.nav-pills .nav-link.active::before {
+  width: 100% !important;
+}
+
+.about .nav.nav-pills .nav-link.active {}
