@@ -58,22 +58,19 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div>
-                  <span className="tagline">Welcome to my Portfolio</span>
-                  <h1 className="fixed-height">{`Hi! I'm Brian, `} <br /><span className="txt-rotate" ><span className="wrap">{text}</span></span></h1>
+                  {/* <span className="tagline">Welcome to my Portfolio</span> */}
+                  <h1>{`Hi! I'm Brian, `} <br /><span className="txt-rotate" ><span className="wrap">{text}</span></span></h1>
                   <p>As a quick learner and a real problem solver, I've refined my skills in various programming languages, frameworks, and tools. Count on me to thrive in any technical environment! </p>
                   <a href="/Brian_Yu_Resume.pdf" download>Download My Resume <ArrowDownCircle size={25} /> </a>
                 </div>}
             </TrackVisibility>
           </Col>
           <Col xs={6} md={4} xl={3}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div>
-                  <div className="circle">
-                    <img src={headerImg} alt="Header Img" />
-                  </div>
-                </div>}
-            </TrackVisibility>
+            <div>
+              <div className="circle">
+                <img src={headerImg} alt="Header Img" />
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>

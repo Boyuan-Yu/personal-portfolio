@@ -46,7 +46,7 @@ export const About = () => {
           </Col>
           <Col xs={7} md={5} xl={5} >
             <p>I am a Full Stack Developer with a passion for learning and building new things. I have experience working with a variety of technologies and languages including Python, JavaScript, React, Node, Express, MongoDB, and more. I am currently working as a Software Engineer</p>
-            <p>When I'm not coding, I enjoy playing guitar, reading, and playing video games.</p>
+            <p>When I'm not coding, I enjoy playing basketball, reading, and playing video games.</p>
 
             <Tab.Container id="about-tabs" defaultActiveKey="first">
               <Nav variant="pills" id="square-tabs">

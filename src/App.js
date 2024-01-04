@@ -11,7 +11,7 @@ import { About } from './components/About';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App background-all" >
       <NavBar />
       <Banner />
       <About />
