@@ -9,22 +9,7 @@ import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
+  const webProjects = [
     {
       title: "Business Startup",
       description: "Design & Development",
@@ -51,7 +36,7 @@ export const Projects = () => {
               {({ isVisible }) =>
                 <div>
                   <h2>Projects</h2>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <p>Professional and academic projects</p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                       <Nav.Item>
@@ -68,7 +53,7 @@ export const Projects = () => {
                       <Tab.Pane eventKey="first">
                         <Row>
                           {
-                            projects.map((project, index) => {
+                            webProjects.map((project, index) => {
                               return (
                                 <ProjectCard
                                   key={index}
