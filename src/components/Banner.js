@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/brian-fig-2.png";
-import { ArrowDown, ArrowDownCircle, ArrowRightCircle } from 'react-bootstrap-icons';
+import { ArrowDownCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
