@@ -76,29 +76,6 @@ export const About = () => {
                 </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
-
-            {/* <Tabs
-              id="about-tab"
-              activeKey={key}
-              onSelect={(k) => setKey(k)}
-              className="myclass">
-              <Tab eventKey="experience" title="Experience">
-                <p></p>
-                <p><strong>{'\u2022'}Full Stack Developer</strong><br />
-                  Enciv <em>2023/07 - Present</em></p>
-                <p><strong>{'\u2022'}Machine Learning Engineer</strong><br />
-                  Intelligent Precision Instrument <em>2021/01 - 2021/06</em></p>
-                <p><strong>{'\u2022'}Quality Assurance Engineer Intern</strong><br />
-                  GZY Information Technology <em>2019/05 - 2019/08</em></p>
-              </Tab>
-              <Tab eventKey="education" title="Education">
-                <p></p>
-                <p><strong>{'\u2022'} Northeastern University</strong><br />
-                  Master of Science in Computer Science <em>2021 - 2023</em></p>
-                <p><strong>{'\u2022'} University of California, San Diego</strong><br />
-                  Bachelor of Science in Computer Science <em>2016 - 2019</em></p>
-              </Tab>
-            </Tabs> */}
           </Col>
           <Col xs={5} md={3} xl={3}>
             <Row>

@@ -26,7 +26,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
+    let response = await fetch("https://portfolio-server-brian-ab5f95a08894.herokuapp.com/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -50,7 +50,7 @@ export const Contact = () => {
           <Col sm={12} md={6}>
             <TrackVisibility partialVisibility>
               {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : "hidden"} src={contactImg} alt="Contact Us" />
+                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us" />
               }
             </TrackVisibility>
           </Col>
