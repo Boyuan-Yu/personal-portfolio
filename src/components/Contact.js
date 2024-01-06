@@ -25,6 +25,10 @@ export const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!formDetails.firstName || !formDetails.lastName || !formDetails.email || !formDetails.message) {
+      setStatus({ success: false, message: 'Please fill in all fields.' });
+      return;
+    }
     setButtonText("Sending...");
     let response = await fetch("https://portfolio-server-brian-ab5f95a08894.herokuapp.com/contact", {
       method: "POST",

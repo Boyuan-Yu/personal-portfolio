@@ -3,7 +3,7 @@
   --color1: #17171f;
   --color2: #5698c3;
   --color3: #1661ab;
-  --color4: #ede0ba;
+  --color4: #f5f5dc;
   --color5: #5698c3;
   --color6: #f8df72;
 }
@@ -190,7 +190,7 @@ span.navbar-text {
   width: 30px;
   height: 30px;
   position: absolute;
-  background-color: var(--color4);
+  background-color: #fff;
   border-radius: 50%;
   transform: scale(0);
   transition: 0.3s ease-in-out;

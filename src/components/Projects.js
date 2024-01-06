@@ -90,7 +90,7 @@ export const Projects = () => {
               {({ isVisible }) =>
                 <div>
                   <h2>Projects</h2>
-                  <p>Professional and academic projects</p>
+                  <p>Professional and academic projects. <br /> For code examples, visit my Github through the icon on the top navigation bar.</p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                       <Nav.Item>
