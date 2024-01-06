@@ -1,8 +1,16 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import pjEnciv from "../assets/img/pj-enciv.png";
+import pjBooking from "../assets/img/pj-booking.png";
+import pjTuiter from "../assets/img/pj-tuiter.png";
+import pjAgility from "../assets/img/pj-agility.png";
+import pjPortfolio from "../assets/img/pj-portfolio.png";
+import pjAimodel from "../assets/img/pj-aimodel.png";
+import pjAws from "../assets/img/pj-aws.png";
+import pjDetection from "../assets/img/pj-detection.png";
+import pjGame from "../assets/img/pj-game.png";
+import pjAndroidSocial from "../assets/img/pj-android-social.png";
+import pjJet from "../assets/img/pj-jet.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,19 +19,65 @@ export const Projects = () => {
 
   const webProjects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Civil Pursuit",
+      description: "Productive democratic deliberation online",
+      imgUrl: pjEnciv,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Booking App",
+      description: "Booking App for Traveling",
+      imgUrl: pjBooking,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Tuiter",
+      description: "Twitter Clone Social Media App",
+      imgUrl: pjTuiter,
+    },
+    {
+      title: "Agility",
+      description: "Team Management App",
+      imgUrl: pjAgility,
+    },
+    {
+      title: "Portfolio",
+      description: "My Portfolio Website",
+      imgUrl: pjPortfolio,
+    },
+  ];
+
+  const mlProjects = [
+    {
+      title: "Newsgroup Posts",
+      description: "AWS, NLP",
+      imgUrl: pjAws,
+    },
+    {
+      title: "Runtime Prediction",
+      description: "Graph",
+      imgUrl: pjAimodel,
+    },
+    {
+      title: "Object Detection",
+      description: "CV",
+      imgUrl: pjDetection,
+    },
+    {
+      title: "Game Genre Prediction",
+      description: "NLP",
+      imgUrl: pjGame,
+    },
+  ];
+
+  const androidProjects = [
+    {
+      title: "Social Media App",
+      description: "Java, Firebase, Android Studio",
+      imgUrl: pjAndroidSocial,
+    },
+    {
+      title: "Jet Game",
+      description: "Java, Android Studio, Gyroscope",
+      imgUrl: pjJet,
     },
   ];
 
@@ -32,7 +86,7 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col size={12}>
-            <TrackVisibility>
+            <TrackVisibility partialVisibility>
               {({ isVisible }) =>
                 <div>
                   <h2>Projects</h2>
@@ -65,10 +119,32 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                        <Row>
+                          {
+                            mlProjects.map((project, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
+                                />
+                              )
+                            })
+                          }
+                        </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                        <Row>
+                          {
+                            androidProjects.map((project, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
+                                />
+                              )
+                            })
+                          }
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

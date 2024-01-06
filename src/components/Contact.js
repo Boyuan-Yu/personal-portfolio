@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -47,7 +48,11 @@ export const Contact = () => {
       <Container>
         <Row className="align-items-center">
           <Col sm={12} md={6}>
-            <img src={contactImg} alt="Contact Us" />
+            <TrackVisibility partialVisibility>
+              {({ isVisible }) =>
+                <img className={isVisible ? "animate__animated animate__zoomIn" : "hidden"} src={contactImg} alt="Contact Us" />
+              }
+            </TrackVisibility>
           </Col>
           <Col sm={12} md={6}>
             <div>

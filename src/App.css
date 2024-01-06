@@ -407,6 +407,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 900px;
 }
 
 .project h2 {
@@ -496,6 +497,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  cursor: default;
+}
+
+.proj-imgbx img {
+  width: 100%;
+
 }
 
 .proj-imgbx::before {
