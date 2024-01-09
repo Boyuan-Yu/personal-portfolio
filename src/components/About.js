@@ -45,7 +45,7 @@ export const About = () => {
             <img src={computerImg} alt="Computer Img" />
           </Col>
           <Col xs={7} md={5} xl={5} >
-            <p>I am a Software Engineer with a passion for building scalable and responsive web applications, blending a deep understanding of web development, machine learning, and algorithms.With a track record of leading projects to successful completion, I'm enthusiastic about utilizing my diverse skill set to create impactful and user-centric software solutions. </p>
+            <p>I am a Software Engineer with a passion for building scalable and responsive web applications, blending a deep understanding of web development, machine learning, and algorithms. With a track record of leading projects to successful completion, I'm enthusiastic about utilizing my diverse skill set to create impactful and user-centric software solutions. </p>
             <p>When I'm not coding, I enjoy playing basketball, photographing,and cooking.</p>
 
             <Tab.Container id="about-tabs" defaultActiveKey="first">
