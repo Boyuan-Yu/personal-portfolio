@@ -57,10 +57,10 @@ export const Framer = () => {
 
         <h2>Skills</h2>
         <div className="bg-circularDark">
-          <div className="corner-text top-left">MACHINE LEARNING</div>
-          <div className="corner-text top-right">PROGRAMMING LANGUAGES</div>
-          <div className="corner-text bottom-left">DEVOPS & TOOLS</div>
-          <div className="corner-text bottom-right">FULL STACK DEVELOPMENT</div>
+          <div className="corner-text top-left">MACHINE<br />LEARNING</div>
+          <div className="corner-text top-right">PROGRAMMING<br />LANGUAGES</div>
+          <div className="corner-text bottom-left">DEVOPS<br />TOOLS</div>
+          <div className="corner-text bottom-right">FULL STACK<br />DEVELOPMENT</div>
           <Skill name="Me" img={brianIcon} x={'0'} y={'0'} />
 
           <Skill name="NLP" img={nlpIcon} x={'-18vw'} y={'-13vh'} />
@@ -68,7 +68,7 @@ export const Framer = () => {
           <Skill name="Deep Learning" img={deepLearningIcon} x={'-24vw'} y={'-20vh'} />
           <Skill name="Data Mining" img={dataMiningIcon} x={'-25vw'} y={'-30vh'} />
           <Skill name="TensorFlow" img={tensorflowIcon} x={'-5vw'} y={'-7vh'} />
-          <Skill name="SKlearn" img={sklearnIcon} x={'-12vw'} y={'-3vh'} />
+          <Skill name="SKlearn" img={sklearnIcon} x={'-14vw'} y={'-3vh'} />
           <Skill name="NumPy" img={numpyIcon} x={'-10vw'} y={'-15vh'} />
           <Skill name="Pandas" img={pandasIcon} x={'-15vw'} y={'-26vh'} />
 
@@ -83,16 +83,16 @@ export const Framer = () => {
           <Skill name="React" img={reactIcon} x={'7vw'} y={'7vh'} />
           <Skill name="NodeJS" img={nodejsIcon} x={'16vw'} y={'10vh'} />
           <Skill name="Storybook" img={storybookIcon} x={'17vw'} y={'20vh'} />
-          <Skill name="REST API" img={restIcon} x={'23vw'} y={'15vh'} />
-          <Skill name="Spring Boot" img={springIcon} x={'3vw'} y={'17vh'} />
+          <Skill name="REST API" img={restIcon} x={'25vw'} y={'15vh'} />
+          <Skill name="Spring Boot" img={springIcon} x={'6vw'} y={'17vh'} />
           <Skill name="Django" img={djangoIcon} x={'10vw'} y={'25vh'} />
 
-          <Skill name="Git" img={gitIcon} x={'-4vw'} y={'5vh'} />
+          <Skill name="Git" img={gitIcon} x={'-4vw'} y={'7vh'} />
           <Skill name="Docker" img={dockerIcon} x={'-23vw'} y={'9vh'} />
           <Skill name="AWS" img={awsIcon} x={'-10vw'} y={'12vh'} />
           <Skill name="Linux" img={linuxIcon} x={'-14vw'} y={'7vh'} />
           <Skill name="Firebase" img={firebaseIcon} x={'-17vw'} y={'20vh'} />
-          <Skill name="Heroku" img={herokuIcon} x={'-5vw'} y={'17vh'} />
+          <Skill name="Heroku" img={herokuIcon} x={'-5vw'} y={'19vh'} />
           <Skill name="Jira" img={jiraIcon} x={'-12vw'} y={'30vh'} />
 
         </div>

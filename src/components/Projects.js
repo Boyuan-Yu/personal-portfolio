@@ -97,7 +97,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="first">Web</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Machine Learning</Nav.Link>
+                        <Nav.Link eventKey="second">ML</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="third">Android</Nav.Link>
@@ -105,6 +105,7 @@ export const Projects = () => {
                     </Nav>
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                       <Tab.Pane eventKey="first">
+                        <p>Web Development</p>
                         <Row>
                           {
                             webProjects.map((project, index) => {
@@ -119,6 +120,7 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
+                        <p>Machine Learning</p>
                         <Row>
                           {
                             mlProjects.map((project, index) => {
@@ -133,6 +135,7 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
+                        <p>Android Development</p>
                         <Row>
                           {
                             androidProjects.map((project, index) => {
